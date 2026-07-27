@@ -12,6 +12,6 @@ public class ExpenseTracker{
     return total;
   }
   public void deleteExpense(Expense expense){
-    expenses.remove(expense)
+    expenses.remove(expense);
   }
 }
