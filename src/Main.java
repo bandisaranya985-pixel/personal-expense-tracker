@@ -6,6 +6,7 @@ public class Main {
         tracker.addExpense(expense1);
         tracker.addExpense(expense2);
         tracker.displayExpenses();
+        System.out.println("Number of expenses: " + tracker.getExpenseCount());
         System.out.println("\nFood Expenses:");
         tracker.displayExpensesByCategory("Food");
         System.out.println("Total expenses: " + tracker.calculateTotalExpenses());
