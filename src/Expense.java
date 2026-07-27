@@ -24,4 +24,10 @@ public class Expense {
       System.out.println("Amount must be greater than zero");
     }
   }
+  public void setDescription(String description) {
+    this.description = description;
+}
+  public void setCategory(String category) {
+    this.category = category;
+}
 }
