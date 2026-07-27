@@ -37,4 +37,18 @@ public class ExpenseTracker {
     public int getExpenseCount() {
         return expenses.size();
 }
+    public void searchExpense(String description) {
+    for (Expense expense : expenses) {
+        if (expense.getDescription().equalsIgnoreCase(description)) {
+            System.out.println(
+                expense.getDescription() + " - $" +
+                expense.getAmount() + " - " +
+                expense.getCategory()
+            );
+            return;
+        }
+    }
+
+    System.out.println("Expense not found.");
+}
 }
