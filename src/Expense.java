@@ -1,7 +1,7 @@
 public class Expense {
   private String description;
   private double amount;
-  privatte String category
+  private String category;
   public double getAmount(){
     return amount;
   }
