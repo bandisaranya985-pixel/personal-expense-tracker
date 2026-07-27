@@ -5,6 +5,7 @@ public class Main {
         Expense expense2 = new Expense("Travel", 250, "Transport");
         tracker.addExpense(expense1);
         tracker.addExpense(expense2);
+        tracker.displayExpenses();
         System.out.println("Total expenses: " + tracker.calculateTotalExpenses());
         tracker.deleteExpense(expense1);
         System.out.println("Total after deletion: " + tracker.calculateTotalExpenses());
