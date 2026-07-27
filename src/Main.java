@@ -5,6 +5,10 @@ public class Main {
         Expense expense2 = new Expense("Travel", 250, "Transport");
         tracker.addExpense(expense1);
         tracker.addExpense(expense2);
+        System.out.println("Before update:");
+        tracker.displayExpenses();
+        expense1.setAmount(600);
+        System.out.println("\nAfter update:");
         tracker.displayExpenses();
         System.out.println("Number of expenses: " + tracker.getExpenseCount());
         System.out.println("\nSearching for Food:");
