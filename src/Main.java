@@ -4,11 +4,11 @@ public class Main{
     Expense expense1 = new Expense();
     expense1.setAmount(500);
     Expense expense2 = new Expense();
-    epense2.setAmount(250);
+    expense2.setAmount(250);
     tracker.addExpense(expense1);
     tracker.addExpense(expense2);
-    System.out.println("Total expenses: " + tracker.calculateTotalExpense());
+    System.out.println("Total expenses: " + tracker.calculateTotalExpenses());
     tracker.deleteExpense(expense1);
-    System.out.println("Total after deeltion: " + tracker.calculateTotalExpenses());
+    System.out.println("Total after deltion: " + tracker.calculateTotalExpenses());
   }
 }
