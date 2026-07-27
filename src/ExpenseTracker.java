@@ -14,9 +14,13 @@ public class ExpenseTracker {
     public void deleteExpense(Expense expense) {
         expenses.remove(expense);
     }
-    public void displayExpense(){
-        for(Expense expense : expenses){
-            System.out.println(expense.getDescription()+"-$"+expense.getAmount()+"-"+expense.getCategory());
-        }
+   public void displayExpenses() {
+    for (Expense expense : expenses) {
+        System.out.println(
+            expense.getDescription() + " - $" +
+            expense.getAmount() + " - " +
+            expense.getCategory()
+        );
     }
+}
 }
