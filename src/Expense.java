@@ -5,4 +5,12 @@ public class Expense {
   public double getAmount(){
     return amount;
   }
+  public void setAmount(double amount){
+    if(amount > 0){
+      this.amount = amount;
+    }
+    else{
+      System.out.println("Amount must be greater than zero");
+    }
+  }
 }
