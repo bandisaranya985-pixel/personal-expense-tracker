@@ -21,6 +21,17 @@ public class ExpenseTracker {
             expense.getAmount() + " - " +
             expense.getCategory()
         );
+}
+    }
+    public void displayExpensesByCategory(String category) {
+    for (Expense expense : expenses) {
+        if (expense.getCategory().equalsIgnoreCase(category)) {
+            System.out.println(
+                expense.getDescription() + " - $" +
+                expense.getAmount() + " - " +
+                expense.getCategory()
+            );
+        }
     }
 }
 }
