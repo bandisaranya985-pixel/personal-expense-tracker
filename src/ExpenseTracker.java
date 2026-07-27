@@ -34,4 +34,7 @@ public class ExpenseTracker {
         }
     }
 }
+    public int getExpenseCount() {
+        return expenses.size();
+}
 }
