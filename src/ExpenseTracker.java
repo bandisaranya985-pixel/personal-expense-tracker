@@ -16,5 +16,7 @@ public class ExpenseTracker {
     }
     public void displayExpense(){
         for(Expense expense : expense){
-            System.out.println(expense.getDescription()+"-$"+expense.getAmount()+"-"+expense.getCategory()
+            System.out.println(expense.getDescription()+"-$"+expense.getAmount()+"-"+expense.getCategory());
+        }
+    }
 }
