@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+public class ExpenseTracker {
+    private ArrayList<Expense> expenses = new ArrayList<>();
+    public void addExpense(Expense expense) {
+        expenses.add(expense);
+    }
+    public double calculateTotalExpenses() {
+        double total = 0;
+        for (Expense expense : expenses) {
+            total += expense.getAmount();
+        }
+        return total;
+    }
+    public void deleteExpense(Expense expense) {
+        expenses.remove(expense);
+    }
+   public void displayExpenses() {
+    for (Expense expense : expenses) {
+       System.out.println(expense);
+    }
+    }
+    public void displayExpenses() {
+        for (Expense expense : expenses) {
+            System.out.println(expense);
+        }
+    }
+    public int getExpenseCount() {
+        return expenses.size();
+    }
+    public void searchExpense(String description) {
+    for (Expense expense : expenses) {
+        if (expense.getDescription().equalsIgnoreCase(description)) {
+            System.out.println(expense);
+            return;
+        }
+    }
+
+    System.out.println("Expense not found.");
+}
+}
