@@ -30,4 +30,10 @@ public class Expense {
   public void setCategory(String category) {
     this.category = category;
 }
+@Override
+public String toString() {
+    return "Description: " + description +
+           ", Amount: " + amount +
+           ", Category: " + category;
+}
 }
