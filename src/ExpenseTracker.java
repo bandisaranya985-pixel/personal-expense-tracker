@@ -16,35 +16,21 @@ public class ExpenseTracker {
     }
    public void displayExpenses() {
     for (Expense expense : expenses) {
-        System.out.println(
-            expense.getDescription() + " - $" +
-            expense.getAmount() + " - " +
-            expense.getCategory()
-        );
-}
+       System.out.println(expense);
     }
-    public void displayExpensesByCategory(String category) {
-    for (Expense expense : expenses) {
-        if (expense.getCategory().equalsIgnoreCase(category)) {
-            System.out.println(
-                expense.getDescription() + " - $" +
-                expense.getAmount() + " - " +
-                expense.getCategory()
-            );
+    }
+    public void displayExpenses() {
+        for (Expense expense : expenses) {
+            System.out.println(expense);
         }
     }
-}
     public int getExpenseCount() {
         return expenses.size();
-}
+    }
     public void searchExpense(String description) {
     for (Expense expense : expenses) {
         if (expense.getDescription().equalsIgnoreCase(description)) {
-            System.out.println(
-                expense.getDescription() + " - $" +
-                expense.getAmount() + " - " +
-                expense.getCategory()
-            );
+            System.out.println(expense);
             return;
         }
     }
